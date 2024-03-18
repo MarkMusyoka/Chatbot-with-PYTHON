@@ -1,0 +1,38 @@
+BASIC AI-CHATBOT
+
+
+import random
+#Define a list of possible user inputs and corresponding AI responses
+responses={
+ "hello":["Hello!","Hi there!","Greetings!"],
+ "how are you"["I'm doing well,thank you!","I'm great, how about you?"]
+ "what is your name":["You can call me chatbot.","I'm your friend Chatbot!'],
+ "goodbye":["Goodbye!","See you later!,"Have a nice day!"]
+ "default":["I'm not sure I understand.","Could you please rephrase that?"
+
+}
+#Function to generate AI response based on uer input
+def generate_response(user_input):
+ user_input=user_input.lower() #Convert user input to lowercase
+#Check if thr user input matches any predefined responses
+ if user-INPUT IN RESPONSES:
+  return random.chice(responses[user_input])
+ else:
+  return random.choice(responses["default"])
+#Main loop to simulate conversation with the AI
+def main():
+  print("Welcome!How can i help you today?")
+
+  while True:
+   user_input=input("You:")
+   if user_input.lower()=="exit":
+      print("Goodbye!Have a great day.")
+      break
+
+     ai_response=generate_response(user_input)
+     print("AI:" +ai_response)
+
+if__name__=="__main__":
+main()
+
+
